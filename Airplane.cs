@@ -12,9 +12,12 @@ namespace Lesson8_Inheritance
         string color = "Красный";
         byte wingSpan = 50; // размах крыльев
 
+        public override string Name { get => name; set => name = value; }
+        public override string Color { get => color; set => color = value; }
+
         public override void Move()
         {
-            Console.WriteLine("{0} {1} летит!", color, name);
+            Console.WriteLine("{0} {1} летит!", Color, Name);
         }
     }
 }

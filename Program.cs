@@ -11,10 +11,15 @@ namespace Lesson8_Inheritance
         static void Main(string[] args)
         {
             Airplane a = new Airplane();
+            a.getInfo();
             a.Move();
+            Console.WriteLine();
 
             Ship s = new Ship();
+            a.getInfo();
             s.Move();
+            Console.WriteLine();
+            
         }
     }
 }

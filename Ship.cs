@@ -12,9 +12,12 @@ namespace Lesson8_Inheritance
         string color = "Белый";
         ushort displacement = 7500; // Водоизмещение
 
+        public override string Name { get => name; set => name = value; }
+        public override string Color { get => color; set => color = value; }
+
         public override void Move()
         {
-            Console.WriteLine("{0} {1} плывет!", color, name);
+            Console.WriteLine("{0} {1} плывет!", Color, Name);
         }
     }
 }
